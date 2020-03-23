@@ -43,17 +43,15 @@ function parse_inline($iquery)
           $count = get_files_arr($arr, $db, $user->id, 50, $offset);
         if ($count == 0)
         {
-          $r = $api->answerInlineQuery($id, null, 0, true, 0, 'Add media', 'add');
-          $api->sendMessage($user->id, $r['description']);
+          $api->answerInlineQuery($id, null, 0, true, 0, 'Add media', 'add');
           break;
         }
         if ($count == 50)
           $offset += $count;
         else
           $offset = '';
-        $r = $api->answerInlineQuery($id, $arr, 0, true,
+        $api->answerInlineQuery($id, $arr, 0, true,
           $offset, 'Add media', 'add');
-        $api->sendMessage($user->id, $r['description']);
         break;
       default:
         $count = 0;
