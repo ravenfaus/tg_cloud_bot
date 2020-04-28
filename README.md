@@ -10,6 +10,3 @@ For any questions write to telegram: [@RavenFaus](http://t.me/ravenfaus "@RavenF
 - Set webhook, using set.php
 - Enable inline mode in @BotFather
 - Be happy :)
-
-# Example
-Example of bot you can see here: [@RavenSaveBot](https://t.me/RavenSaveBot "@RavenSaveBot")
